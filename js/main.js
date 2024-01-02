@@ -1,3 +1,8 @@
+// Youtubede bu metodlara baxamg ucun :         https://www.youtube.com/watch?v=nEabP9CYCAQ&t=329s   bu linke daxil ol
+
+
+
+
 const people = [
     { name : "Владилен" , age : 25  , budget :40000 },
 
@@ -11,6 +16,27 @@ const people = [
 
     { name : "Виктория" , age : 38  , budget :2300}
 ]
+
+
+// Asagidaki metodlari if ve yaxud for ilede evez elemek olur
+//Meselen
+
+for(i=0; i<people.length; i++){
+    console.log(people[i]);             // Bu foreach ni evez edir
+}
+
+
+var adults = []
+for(i=0; i<people.length; i++){
+    if(people[i].age>=18){
+        adults.push(people[i])             // Bu ise filter in cetun yolun yeni find metodunan istiofade etmiyerek yazilisi
+    }
+
+}
+console.log(adults);
+
+
+
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
